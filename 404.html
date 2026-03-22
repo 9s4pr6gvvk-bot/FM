@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Page Not Found | Franks Media</title>
+<meta name="robots" content="noindex, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html,body{height:100%;}
+body{
+  background:#0a0a0a;color:#f0ede8;
+  font-family:'Outfit',sans-serif;font-weight:300;
+  -webkit-font-smoothing:antialiased;
+  display:flex;flex-direction:column;
+  overflow:hidden;
+}
+a{text-decoration:none;color:inherit;}
+
+/* BG NUMBER */
+.bg-num{
+  position:fixed;
+  font-family:'Syne',sans-serif;
+  font-size:clamp(280px,40vw,520px);
+  font-weight:800;
+  color:rgba(255,255,255,.03);
+  letter-spacing:-.04em;
+  line-height:1;
+  top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  pointer-events:none;
+  user-select:none;
+  white-space:nowrap;
+}
+
+/* NAV */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:10;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:22px 56px;
+}
+.logo img{height:80px;width:auto;max-width:180px;object-fit:contain;}
+
+/* MAIN */
+main{
+  flex:1;display:flex;align-items:center;justify-content:center;
+  padding:120px 40px 60px;position:relative;z-index:1;
+}
+.inner{text-align:center;max-width:520px;}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  margin-bottom:28px;
+}
+.eyebrow-dot{width:6px;height:6px;border-radius:50%;background:#0057A8;animation:pulse 2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+.eyebrow span{
+  font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(240,237,232,.4);
+}
+
+h1{
+  font-family:'Syne',sans-serif;
+  font-size:clamp(36px,5vw,58px);
+  font-weight:700;letter-spacing:-.025em;
+  line-height:1.05;margin-bottom:20px;
+  color:#f0ede8;
+}
+
+p{
+  font-size:16px;line-height:1.75;
+  color:rgba(240,237,232,.45);
+  margin-bottom:44px;
+}
+
+.btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+
+.btn{
+  padding:13px 24px;border-radius:8px;
+  font-family:'Outfit',sans-serif;font-size:13px;font-weight:500;letter-spacing:.05em;
+  display:inline-flex;align-items:center;gap:9px;
+  transition:all .25s;border:none;cursor:pointer;
+}
+.btn-blue{background:#0057A8;color:#fff;}
+.btn-blue:hover{background:#0066cc;transform:translateY(-1px);}
+.btn-ghost{
+  background:transparent;color:rgba(240,237,232,.7);
+  border:1px solid rgba(255,255,255,.15);
+}
+.btn-ghost:hover{background:rgba(255,255,255,.06);color:#f0ede8;border-color:rgba(255,255,255,.35);}
+.btn svg{width:13px;height:13px;transition:transform .25s;}
+.btn:hover svg{transform:translateX(3px);}
+
+/* LINKS */
+.quick-links{
+  margin-top:52px;
+  padding-top:40px;
+  border-top:1px solid rgba(255,255,255,.07);
+  display:flex;gap:32px;justify-content:center;flex-wrap:wrap;
+}
+.quick-links a{
+  font-size:13px;letter-spacing:.06em;
+  color:rgba(240,237,232,.3);
+  transition:color .25s;
+}
+.quick-links a:hover{color:rgba(240,237,232,.8);}
+
+/* FOOTER */
+footer{
+  position:relative;z-index:1;
+  text-align:center;padding:24px;
+  font-size:12px;color:rgba(240,237,232,.18);
+}
+
+/* RESPONSIVE */
+@media(max-width:640px){
+  nav{padding:18px 24px;}
+  .logo img{height:56px;}
+  .btn-row{flex-direction:column;align-items:center;}
+  .quick-links{gap:20px;}
+}
+</style>
+</head>
+<body>
+
+<div class="bg-num">404</div>
+
+<nav>
+  <div class="logo">
+    <a href="index.html">
+      <img src="https://i.postimg.cc/bYQZyD3g/Franks-Media-1-removebg-preview.png" alt="Franks Media">
+    </a>
+  </div>
+</nav>
+
+<main>
+  <div class="inner">
+    <div class="eyebrow">
+      <div class="eyebrow-dot"></div>
+      <span>Error 404</span>
+    </div>
+
+    <h1>This page doesn't exist.</h1>
+
+    <p>The page you're looking for may have been moved, renamed or never existed. Let's get you back on track.</p>
+
+    <div class="btn-row">
+      <a href="index.html" class="btn btn-blue">
+        Back to Home
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+      </a>
+      <a href="index.html#cta" class="btn btn-ghost">Get in Touch</a>
+    </div>
+
+    <div class="quick-links">
+      <a href="web-design.html">Website Design</a>
+      <a href="portfolio.html">Our Work</a>
+      <a href="index.html#services">Services</a>
+      <a href="legal.html">Legal</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Franks Media. All rights reserved.
+</footer>
+
+</body>
+</html>
