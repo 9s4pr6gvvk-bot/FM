@@ -303,8 +303,9 @@ a.service-item{color:inherit;}
 .gallery-head a{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:rgba(240,237,232,.35);display:flex;align-items:center;gap:8px;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:2px;transition:color .25s,border-color .25s;}
 .gallery-head a:hover{color:#f0ede8;border-color:rgba(255,255,255,.4);}
 .gallery-head a svg{width:13px;height:13px;}
-.gallery-grid{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:300px 300px;gap:12px;}
+.gallery-grid{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:340px 240px;gap:12px;}
 .g-item{overflow:hidden;border-radius:4px;position:relative;}
+.g-item:first-child{grid-row:span 2;}
 .g-item img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease;}
 .g-item:hover img{transform:scale(1.05);}
 .g-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.7),transparent 55%);opacity:0;transition:opacity .35s;display:flex;align-items:flex-end;padding:24px 26px;}
@@ -312,8 +313,8 @@ a.service-item{color:inherit;}
 .g-label{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#fff;font-weight:500;display:block;}
 .g-sublabel{font-size:11px;color:rgba(255,255,255,.55);letter-spacing:.06em;margin-top:4px;display:block;}
 .g-item-video{overflow:hidden;border-radius:4px;position:relative;background:#000;}
-.g-item-video iframe{width:100%;height:100%;border:none;display:block;}
-.g-item-video .g-overlay{background:linear-gradient(to top,rgba(10,10,10,.75),transparent 50%);}
+.g-item-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;display:block;}
+.g-item-video:hover .g-overlay{opacity:1;}
 
 /* PORTFOLIO */
 .portfolio-outer{background:#0e0e0e;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);}
@@ -500,7 +501,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
   .feature-grid{grid-template-columns:1fr;}
   .feature-img-col{min-height:380px;}
   .feature-text-col{padding:48px 30px;}
-  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 220px;}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:260px 200px;}
   .portfolio-inner{padding:60px 30px;}
   .portfolio-clients{grid-template-columns:1fr;}
   .testimonial-inner{grid-template-columns:1fr;gap:0;}
@@ -707,12 +708,6 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
       <img src="https://i.postimg.cc/C10W7vX7/DJI-0151-(2).jpg" alt="Fintra Beach, Killybegs, Donegal">
       <div class="g-overlay">
         <div><span class="g-label">Fintra Beach</span><span class="g-sublabel">Killybegs, Donegal</span></div>
-      </div>
-    </div>
-    <div class="g-item reveal">
-      <img src="https://i.postimg.cc/hPY664NS/DJI-0196-FF.jpg" alt="Ardara, Donegal">
-      <div class="g-overlay">
-        <div><span class="g-label">Ardara</span><span class="g-sublabel">County Donegal, Ireland</span></div>
       </div>
     </div>
     <div class="g-item-video reveal">
