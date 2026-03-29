@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /
+
+Allow: /index.html
+Allow: /portfolio.html
+Allow: /web-design.html
+Allow: /drone-photography.html
+
+Sitemap: https://www.franks-media.co.uk/sitemap.xml
