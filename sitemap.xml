@@ -3,29 +3,30 @@
 
   <url>
     <loc>https://www.franks-media.co.uk/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://www.franks-media.co.uk/portfolio.html</loc>
-    <lastmod>2025-06-01</lastmod>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.franks-media.co.uk/web-design.html</loc>
-    <lastmod>2025-06-01</lastmod>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.franks-media.co.uk/drone-photography.html</loc>
-    <lastmod>2025-06-01</lastmod>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
 </urlset>
